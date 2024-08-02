@@ -1,0 +1,175 @@
+.console {
+  overflow: hidden;
+  height: 90%;
+  background-color: #201F1F30;
+  backdrop-filter: blur(14px);
+  border: 1px solid #FFFFFF15;
+  border-radius: 27px;
+
+
+  &__header {
+    overflow: hidden;
+    height: 40px;
+    background-color: #201F1F46;
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #FFFFFF15;
+  }
+
+  &__file {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: -0.3px;
+    padding: 12px 25px;
+    background-color: #201F1F46;
+    border-right: 1px solid #FFFFFF15;
+    transition: .5s;
+
+    &_active {
+      background-color: #65656525;
+    }
+  }
+
+  &__state {
+    margin: 0 30px 0 15px;
+  }
+
+  &__dot {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    & + & {
+      margin-left: 7px;
+    }
+
+    &_red {
+      background-color: #E63636;
+    }
+    &_yellow {
+      background-color: #E6D436;
+    }
+    &_green {
+      background-color: #4DCC11;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 83%;
+    padding: 20px 25px;
+    overflow-y: auto;
+    croll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+
+      &-track {
+        background: transparent;
+      }
+      &-thumb {
+        background: grey;
+        border-radius: 6px;
+        transition: .5s;
+      }
+      &-corner {
+        background-color: transparent;
+      }
+      &-track-piece {
+        background-color: transparent;
+      }
+      &-button {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__banner {
+    font-family: 'Lucida Console', sans-serif !important;
+    font-size: 10px;
+    color: #FFFFFF;
+
+    @media screen and (max-width: 385px) {
+      font-size: 8px;
+    }
+  }
+
+
+  &__result {
+    font-family: monospace;
+    font-size: 13px;
+    color: #FFFFFF;
+
+    @media screen and (max-width: 385px) {
+      font-size: 10px;
+    }
+  }
+
+  &_active {
+    border-radius: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 100000;
+
+    & .console__body {
+      height: 90%;
+    }
+  }
+
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+
+    @media screen and (max-width: 500px) {
+      font-size: 32px;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(32, 31, 31, 5);
+    backdrop-filter: blur(14px);
+    border-top: 1px solid #FFFFFF15;
+  }
+
+  &__input {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    background: transparent;
+    padding: 7px 0 7px 30px;
+
+    &:focus-visible {
+      outline-width: 0;
+    }
+  }
+
+  &__btn {
+    background-color: #282828;
+    backdrop-filter: blur(14px);
+    border-left: 1px solid #FFFFFF15;
+    font-size: 13px;
+    padding: 7px 25px 7px 20px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  &__files {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,56 @@
+.footer {
+  max-width: 552px;
+  margin: 0 auto 25px;
+  height: 50px;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #201F1F46;
+  border: 1px solid #FFFFFF15;
+  backdrop-filter: blur(2px);
+
+  &__block {
+    background-color: #201F1F46;
+    backdrop-filter: blur(2px);
+    text-align: center;
+    max-width: 168px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: -0.3px;
+    padding: 16px 0;
+
+    &_left {
+      border-right: 1px solid #FFFFFF15;
+    }
+    &_right {
+      border-left: 1px solid #FFFFFF15;
+      text-decoration: underline;
+      transition: .5s;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+
+  &__link {
+    min-width: max-content;
+    height: 21px;
+    object-fit: cover;
+    transition: .5s;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    & + & {
+      margin-left: 10px;
+    }
+
+    &s {
+      padding: 0 21px;
+    }
+  }
+
+}
