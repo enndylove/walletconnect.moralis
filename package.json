@@ -3,15 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tanstack/react-query": "^5.51.9",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@wagmi/core": "^2.12.2",
+    "@web3modal/wagmi": "^5.0.7",
+    "ethers": "^6.13.1",
+    "moralis": "^2.26.9",
     "react": "^18.3.1",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "sass": "^1.77.8",
+    "stream": "^0.0.3",
+    "typescript": "^5.0.4",
+    "viem": "^2.17.5",
+    "wagmi": "^2.11.3",
+    "web-vitals": "^2.1.4",
+    "web3": "^4.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,5 +49,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-polyfill-webpack-plugin": "^4.0.0",
+    "tailwindcss": "^3.4.6"
   }
 }
