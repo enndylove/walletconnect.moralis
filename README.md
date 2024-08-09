@@ -28,7 +28,7 @@ cd walletconnect.moralis
 ```
 3. Install the required dependencies:
 ```shell
-npm install --force
+npm install
 ```
 
 ## Usage
